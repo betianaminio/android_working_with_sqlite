@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Working with SQLite</string>
+
+    <string name="card_view_exercise_title">Exercise title</string>
+    <string name="card_view_exercise_description">Description</string>
+    <string name="card_view_exercise_level">Level:</string>
+
+</resources>
