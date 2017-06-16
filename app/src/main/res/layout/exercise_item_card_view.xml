@@ -34,7 +34,7 @@
             android:layout_marginTop="10dp"
             android:ellipsize="end"
             android:maxLines="3"
-            android:text="@string/card_view_exercise_description"
+            android:text="@string/exercise_description"
             android:textSize="16sp" />
 
         <TextView
@@ -44,7 +44,7 @@
             android:gravity="start"
             android:layout_marginTop="10dp"
             android:textSize="16sp"
-            android:text="@string/card_view_exercise_level"/>
+            android:text="@string/exercise_level"/>
 
     </LinearLayout>
 

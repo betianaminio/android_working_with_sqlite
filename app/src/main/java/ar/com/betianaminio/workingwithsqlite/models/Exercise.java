@@ -1,8 +1,5 @@
 package ar.com.betianaminio.workingwithsqlite.models;
 
-/**
- * Created by Betiana G. Miño on 09/06/2017.
- */
 
 public class Exercise {
 
@@ -45,4 +42,18 @@ public class Exercise {
         return this.level;
     }
 
+    public void setName( String name ){
+
+        this.name = name;
+    }
+
+    public void setDescription( String description ){
+
+        this.description = description;
+    }
+
+    public void setLevel( String level ){
+
+        this.level = level;
+    }
 }

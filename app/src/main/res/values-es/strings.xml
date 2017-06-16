@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Trabajando con SQLite</string>
+    <string name="go_out_message">Estás seguro?</string>
+    <string name="action_button_yes">SI</string>
+    <string name="action_button_no">NO</string>
+
+    <string name="card_view_exercise_title">Titulo del ejercicio</string>
+    <string name="exercise_name">Nombre</string>
+    <string name="exercise_description">Descripción</string>
+    <string name="exercise_level_lower">Bajo</string>
+    <string name="exercise_level_medium">Medio</string>
+    <string name="exercise_level_higher">Alto</string>
+    <string name="exercise_level">Nivel:</string>
+    <string name="exercise_button_cancel">Cancelar</string>
+    <string name="exercise_button_done">Hecho</string>
+
+    <string name="exercise_error_complete_name">El nombre es obligatorio!</string>
+    <string name="exercise_error_complete_description">La descripción es obligatoria!</string>
+    <string name="edit_exercise_title">Editar ejercicio</string>
+    <string name="new_exercise_title">Nuevo ejercicio</string>
+    <string name="new_exercise_created_message">Se ha creado un nuevo ejercicio.</string>
+    <string name="exercise_error_message">Ha ocurrido un problema. Por favor, inténtalo de nuevo.</string>
+</resources>

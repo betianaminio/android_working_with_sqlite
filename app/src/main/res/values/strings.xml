@@ -1,8 +1,24 @@
 <resources>
     <string name="app_name">Working with SQLite</string>
+    <string name="go_out_message">Are you sure?</string>
+    <string name="action_button_yes">YES</string>
+    <string name="action_button_no">NO</string>
 
     <string name="card_view_exercise_title">Exercise title</string>
-    <string name="card_view_exercise_description">Description</string>
-    <string name="card_view_exercise_level">Level:</string>
+    <string name="exercise_name">Name</string>
+    <string name="exercise_description">Description</string>
+    <string name="exercise_level_lower">Lower</string>
+    <string name="exercise_level_medium">Medium</string>
+    <string name="exercise_level_higher">Higher</string>
+    <string name="exercise_level">Level:</string>
+    <string name="exercise_button_cancel">Cancel</string>
+    <string name="exercise_button_done">Done</string>
+
+    <string name="exercise_error_complete_name">Name is required!</string>
+    <string name="exercise_error_complete_description">Description is required!</string>
+    <string name="edit_exercise_title">Edit exercise</string>
+    <string name="new_exercise_title">New exercise</string>
+    <string name="new_exercise_created_message">A new exercise has been created successfully</string>
+    <string name="exercise_error_message">A problem has been occurred. Please try again.</string>
 
 </resources>

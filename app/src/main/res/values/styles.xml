@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="ButtonAcceptStyle">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/primary_button</item>
+    </style>
+
+    <style name="ButtonCancelStyle">
+        <item name="android:textColor">@android:color/primary_text_light_nodisable</item>
+        <item name="android:background">@drawable/cancel_action_button</item>
+    </style>
+
 </resources>
