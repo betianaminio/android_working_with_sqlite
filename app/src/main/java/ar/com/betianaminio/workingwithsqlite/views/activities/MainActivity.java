@@ -120,6 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void prepareUI(){
 
+        this.setTitle(getString(R.string.main_activity_title));
+
         this.mNewExerciseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

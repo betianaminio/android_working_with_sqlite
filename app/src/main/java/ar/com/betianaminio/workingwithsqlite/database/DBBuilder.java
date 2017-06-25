@@ -88,7 +88,7 @@ public class DBBuilder extends SQLiteOpenHelper {
 
         try{
 
-            int result = getReadableDatabase().delete(DBExercisesContract.ExerciseTable.TABLE_NAME, DBExercisesContract.ExerciseTable.COLUMN_ID + "=" + id,null);
+            int result = getWritableDatabase().delete(DBExercisesContract.ExerciseTable.TABLE_NAME, DBExercisesContract.ExerciseTable.COLUMN_ID + "=" + id,null);
             this.close();
 
             return result;
@@ -121,16 +121,14 @@ public class DBBuilder extends SQLiteOpenHelper {
 
         try{
 
-            SQLiteDatabase db = this.getWritableDatabase();
-
             ContentValues contentValues = new ContentValues();
             contentValues.put(DBExercisesContract.ExerciseTable.COLUMN_NAME,name);
             contentValues.put(DBExercisesContract.ExerciseTable.COLUMN_DESCRIPTION,description);
             contentValues.put(DBExercisesContract.ExerciseTable.COLUMN_LEVEL,level);
 
-            long newRow = db.insertOrThrow(DBExercisesContract.ExerciseTable.TABLE_NAME,null,contentValues);
+            long newRow = getWritableDatabase().insertOrThrow(DBExercisesContract.ExerciseTable.TABLE_NAME,null,contentValues);
 
-            db.close();
+            this.close();
 
             return newRow;
 
@@ -148,25 +146,25 @@ public class DBBuilder extends SQLiteOpenHelper {
 
         try{
 
-            SQLiteDatabase db = getWritableDatabase();
-
             ContentValues contentValues = new ContentValues();
             contentValues.put(DBExercisesContract.ExerciseTable.COLUMN_NAME,name);
             contentValues.put(DBExercisesContract.ExerciseTable.COLUMN_DESCRIPTION,description);
             contentValues.put(DBExercisesContract.ExerciseTable.COLUMN_LEVEL,level);
 
-            long rowUpdated = db.update(DBExercisesContract.ExerciseTable.TABLE_NAME,contentValues, DBExercisesContract.ExerciseTable.COLUMN_ID + "="+id,null);
+            long rowUpdated = getWritableDatabase().update(DBExercisesContract.ExerciseTable.TABLE_NAME,contentValues, DBExercisesContract.ExerciseTable.COLUMN_ID + "="+id,null);
 
-            db.close();
+            this.close();
 
             return  rowUpdated;
 
         }catch (SQLiteException e ){
 
             Log.d(DEBUG_TAG,"Raised an exception while updating data: " + e.getLocalizedMessage());
+
+            return -1;
         }
 
-        return -1;
+
     }
 
     public Cursor getItemById( int id ){

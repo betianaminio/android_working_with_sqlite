@@ -4,6 +4,8 @@
     <string name="action_button_yes">SI</string>
     <string name="action_button_no">NO</string>
 
+    <string name="main_activity_title">Lista de ejercicios</string>
+
     <string name="card_view_exercise_title">Titulo del ejercicio</string>
     <string name="exercise_name">Nombre</string>
     <string name="exercise_description">Descripción</string>
